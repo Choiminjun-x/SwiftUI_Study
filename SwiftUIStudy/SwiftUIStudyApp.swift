@@ -6,12 +6,26 @@
 //
 
 import SwiftUI
+import Combine 
 
 @main
 struct SwiftUIStudyApp: App {
+    @ObservedObject var router = HouseRouter()
+    
     var body: some Scene {
         WindowGroup {
-            ObservableObjectStudyView()
+            NavigationStack(path: $router.navPath) {
+                HouseView()
+                    .navigationDestination(for: HouseRouter.Destination.self) { destination in
+                        switch destination {
+                        case .livingroom:
+                            LivingroomView()
+                        case .bedroom(let owner):
+                            BedroomView(ownerName: owner)
+                        }
+                    }
+            }
+            .environmentObject(router)
         }
     }
 }

@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B06999B72BBAF3EE00D2AAB3 /* HouseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06999B62BBAF3EE00D2AAB3 /* HouseView.swift */; };
+		B06999B92BBAF40A00D2AAB3 /* HouseRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06999B82BBAF40A00D2AAB3 /* HouseRouter.swift */; };
+		B06999BB2BBAF9A000D2AAB3 /* RoomListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06999BA2BBAF9A000D2AAB3 /* RoomListView.swift */; };
+		B06999BD2BBAFCB300D2AAB3 /* HomeListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06999BC2BBAFCB300D2AAB3 /* HomeListView.swift */; };
 		B0BB61CE2BB7DE30004530B0 /* SwiftUIStudyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0BB61CD2BB7DE30004530B0 /* SwiftUIStudyApp.swift */; };
 		B0BB61D02BB7DE30004530B0 /* ObservableObjectStudyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0BB61CF2BB7DE30004530B0 /* ObservableObjectStudyView.swift */; };
 		B0BB61D22BB7DE31004530B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B0BB61D12BB7DE31004530B0 /* Assets.xcassets */; };
@@ -14,6 +18,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B06999B62BBAF3EE00D2AAB3 /* HouseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseView.swift; sourceTree = "<group>"; };
+		B06999B82BBAF40A00D2AAB3 /* HouseRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseRouter.swift; sourceTree = "<group>"; };
+		B06999BA2BBAF9A000D2AAB3 /* RoomListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomListView.swift; sourceTree = "<group>"; };
+		B06999BC2BBAFCB300D2AAB3 /* HomeListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeListView.swift; sourceTree = "<group>"; };
 		B0BB61CA2BB7DE30004530B0 /* SwiftUIStudy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIStudy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0BB61CD2BB7DE30004530B0 /* SwiftUIStudyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIStudyApp.swift; sourceTree = "<group>"; };
 		B0BB61CF2BB7DE30004530B0 /* ObservableObjectStudyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservableObjectStudyView.swift; sourceTree = "<group>"; };
@@ -32,6 +40,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B06999B52BBAF3DA00D2AAB3 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				B06999BA2BBAF9A000D2AAB3 /* RoomListView.swift */,
+				B06999BC2BBAFCB300D2AAB3 /* HomeListView.swift */,
+				B06999B62BBAF3EE00D2AAB3 /* HouseView.swift */,
+				B06999B82BBAF40A00D2AAB3 /* HouseRouter.swift */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
 		B0BB61C12BB7DE30004530B0 = {
 			isa = PBXGroup;
 			children = (
@@ -52,6 +71,7 @@
 			isa = PBXGroup;
 			children = (
 				B0BB61DB2BB7E0AE004530B0 /* ObservableObject */,
+				B06999B52BBAF3DA00D2AAB3 /* Navigation */,
 				B0BB61CD2BB7DE30004530B0 /* SwiftUIStudyApp.swift */,
 				B0BB61D12BB7DE31004530B0 /* Assets.xcassets */,
 				B0BB61D32BB7DE31004530B0 /* Preview Content */,
@@ -145,8 +165,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B06999B72BBAF3EE00D2AAB3 /* HouseView.swift in Sources */,
+				B06999B92BBAF40A00D2AAB3 /* HouseRouter.swift in Sources */,
 				B0BB61D02BB7DE30004530B0 /* ObservableObjectStudyView.swift in Sources */,
+				B06999BD2BBAFCB300D2AAB3 /* HomeListView.swift in Sources */,
 				B0BB61CE2BB7DE30004530B0 /* SwiftUIStudyApp.swift in Sources */,
+				B06999BB2BBAF9A000D2AAB3 /* RoomListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
